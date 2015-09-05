@@ -48,6 +48,17 @@
     background-color: #e9edec;
 }
 
+.bg-yellow {
+    background-color: #f5f4e5;
+}
+
+.bg-red {
+    background-color: #fcdddb;
+}
+
+
+
+
 
 .text-shadow {
     text-shadow: .001em .001em 3px rgba(0,0,0,0.1);
@@ -70,7 +81,7 @@
 }
 
 .pd-5 {
-    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .list h2 {
@@ -91,3 +102,15 @@
     background-color: #B9BFBE;
 }
 
+.border-yellow {
+    background-color: #d2d08e;
+}
+
+.border-red {
+    background-color: #f4534d;
+}
+
+
+.f18 {
+    font-size:18px;
+}

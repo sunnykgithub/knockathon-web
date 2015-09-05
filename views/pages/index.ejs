@@ -23,6 +23,8 @@
 <% include ../partials/nav.ejs %>
 <% include ../partials/what-is.ejs%>
 <% include ../partials/rules.ejs%>
+<% include ../partials/theme.ejs%>
+<% include ../partials/register.ejs%>
 
 
 </body>
@@ -31,7 +33,8 @@
         var h = $(".entry").height() + $(".navbar").height() + 112;
 
         $(".what-is").height(h);
-        //$(".rules").height(h    );
+        $(".register").height(h);
+        $(".theme").height(h);
     });
 
 </script>
