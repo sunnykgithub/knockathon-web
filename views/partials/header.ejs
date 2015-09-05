@@ -5,3 +5,13 @@
 <link rel="stylesheet" type="text/css" href="/stylesheets/main.css"/>
 <script src="https://use.typekit.net/tco4ujm.js"></script>
 <script>try{Typekit.load({ async: true });}catch(e){}</script>
+<script>
+    $(document).ready(function () {
+        var h = $(".entry").height() + $(".navbar").height() + 112;
+
+        $(".what-is").height(h);
+        $(".register").height(h);
+        $(".theme").height(h);
+    });
+</script>
+
