@@ -32,7 +32,7 @@
 .stit h2 {
     margin: 0px;
     margin-top: 12px;
-    font-size:24px;
+    font-size: 24px;
     font-family: Helvetica, Arial, serif !important;
 }
 
@@ -56,24 +56,19 @@
     background-color: #fcdddb;
 }
 
-
-
-
+body {
+    padding-top: 70px;
+    position: relative;
+    font-size: 16px;
+}
 
 .text-shadow {
-    text-shadow: .001em .001em 3px rgba(0,0,0,0.1);
+    text-shadow: .001em .001em 3px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-inverse {
     /*background-color: #603913 !important;*/
     background-color: #04343e;
-}
-
-.navbar {
-    position: relative;
-    min-height: 50px;
-    margin-bottom: 0px;
-    border: 1px solid transparent;
 }
 
 .huge {
@@ -82,6 +77,10 @@
 
 .pd-5 {
     padding-bottom: 15px;
+}
+
+.mt-15 {
+    margin-top: 15px;
 }
 
 .list h2 {
@@ -110,7 +109,10 @@
     background-color: #f4534d;
 }
 
-
 .f18 {
-    font-size:18px;
+    font-size: 18px;
+}
+
+.aliceu {
+    border-bottom: 3px solid aliceblue;
 }
