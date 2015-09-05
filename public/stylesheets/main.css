@@ -109,6 +109,10 @@ body {
     background-color: #f4534d;
 }
 
+.border-green {
+    background-color: #067C8C;
+}
+
 .f18 {
     font-size: 18px;
 }
@@ -120,4 +124,12 @@ body {
 .orangeu {
     border-bottom: 2px solid #ff8820;
     z-index: 100;
+}
+
+.registeru {
+    border-bottom: 2px solid #d2d08e;
+}
+
+.themeu {
+    border-bottom: 2px solid #F4534B;
 }
