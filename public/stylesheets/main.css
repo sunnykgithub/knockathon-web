@@ -125,17 +125,16 @@ body {
     z-index: 100;
 }
 
-.registeru {
-    border-bottom: 2px solid #d2d08e;
-}
+/*.registeru {*/
+    /*border-bottom: 2px solid #d2d08e;*/
+/*}*/
 
-.themeu {
-    border-bottom: 2px solid #F4534B;
-}
+/*.themeu {*/
+    /*border-bottom: 2px solid #F4534B;*/
+/*}*/
 
 .list li {
-    line-height: 22px !important;
-    margin-top: 20px !important;
+    margin-top: 18px !important;
 }
 
 .medium {
