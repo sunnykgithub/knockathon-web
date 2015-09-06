@@ -135,6 +135,7 @@ body {
 
 .list li {
     margin-top: 18px !important;
+    padding: 4px;
 }
 
 .medium {
