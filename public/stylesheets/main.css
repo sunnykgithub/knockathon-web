@@ -126,11 +126,11 @@ body {
 }
 
 /*.registeru {*/
-    /*border-bottom: 2px solid #d2d08e;*/
+/*border-bottom: 2px solid #d2d08e;*/
 /*}*/
 
 /*.themeu {*/
-    /*border-bottom: 2px solid #F4534B;*/
+/*border-bottom: 2px solid #F4534B;*/
 /*}*/
 
 .list li {
@@ -145,4 +145,14 @@ body {
 
 .highlight {
     background-color: #FCFC9F;
+}
+
+.cleanbounds {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.all-pd-2 {
+    margin-top: 4px!important;
+    padding:4px;
 }

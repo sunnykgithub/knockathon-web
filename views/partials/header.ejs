@@ -132,6 +132,7 @@
         var register = $(".register");
         var theme = $(".theme");
         var whatis = $(".what-is-it");
+        var teams = $(".teams");
 
         var newHeight = $(window).height();
 
@@ -156,6 +157,11 @@
         if (rule.height() <= newHeight) {
             rule.height(newHeight);
             console.log("setting height for rule");
+        }
+
+        if (teams.height() <= newHeight) {
+            teams.height(newHeight);
+            console.log("setting height for teams");
         }
 
         $("#time-div").css("marginTop", newHeight / 4);

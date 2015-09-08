@@ -1,0 +1,91 @@
+[
+  {
+    "name": "HCI",
+    "subdomain": "chrome",
+    "profile_image": null,
+    "users": [
+      {
+        "name": "Sharon",
+        "profile_image": null
+      }
+    ]
+  },
+  {
+    "name": "HCI Finance",
+    "subdomain": "HCIFINANCE",
+    "profile_image": "dclfqgmyyl4lvoi1derpqiu0.JPG",
+    "users": [
+      {
+        "name": "Steve",
+        "profile_image": null
+      }
+    ]
+  },
+  {
+    "name": "HCI Group, Inc.",
+    "subdomain": "hcigroup",
+    "profile_image": "mn3ewypo2h02oh0i3k5psgmx.BMP",
+    "users": [
+      {
+        "name": "Karin",
+        "profile_image": null
+      },
+      {
+        "name": "Andrew",
+        "profile_image": "3rupdlww1knyauifnrxpidst.JPG"
+      },
+      {
+        "name": "Kevin",
+        "profile_image": null
+      }
+    ]
+  },
+  {
+    "name": "HCI Group, Inc.",
+    "subdomain": "Bocagrande",
+    "profile_image": null,
+    "users": [
+      {
+        "name": "Andrew",
+        "profile_image": "3rupdlww1knyauifnrxpidst.JPG"
+      },
+      {
+        "name": "Kevin",
+        "profile_image": null
+      }
+    ]
+  },
+  {
+    "name": "HCI Group, Inc.",
+    "subdomain": "hcigroup",
+    "profile_image": "mn3ewypo2h02oh0i3k5psgmx.BMP",
+    "users": [
+      {
+        "name": "Kevin",
+        "profile_image": null
+      }
+    ]
+  },
+  {
+    "name": "HCI Legal",
+    "subdomain": "hcilegal",
+    "profile_image": null,
+    "users": [
+      {
+        "name": "Brent",
+        "profile_image": null
+      }
+    ]
+  },
+  {
+    "name": "HCINET",
+    "subdomain": "hcinett",
+    "profile_image": "zqeu0u3we5nfg3fw2fugdd2j.JPG",
+    "users": [
+      {
+        "name": "Vadivel",
+        "profile_image": "rb0somkduovkiudthridgruz.JPG"
+      }
+    ]
+  }
+]
