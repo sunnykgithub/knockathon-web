@@ -28,7 +28,12 @@
                             <li class="media" ng-repeat="user in team.users">
                                 <div class="media-left">
                                     <a href="#">
-                                        <img class="media-object" src="https://s3.amazonaws.com/assets.tryexzeo.com/images/default_user.png" alt="...">
+                                        <div ng-if="user.profile_image === null">    
+                                            <img class="media-object" src="https://s3.amazonaws.com/assets.tryexzeo.com/images/default_user.png" alt="...">
+                                        </div>
+                                        <div ng-if="user.profile_image !== null">    
+                                            <img class="media-object" ng-src="https://static.tryexzeo.com/usr/i/up/145092/29/{{user.profile_image}}" alt="...">
+                                        </div>
                                     </a>
                                 </div>
                                 <div class="media-body">
@@ -50,7 +55,6 @@
                                                 <small class="bg-info all-pd-2 text-shadow">Invited</small>
                                             </div>
                                         </div>
-                                    
                                 </div>
                             </li>
                         </ul>
