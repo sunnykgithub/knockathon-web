@@ -17,12 +17,13 @@
             <div class="row">
                 <div class="col-md-offset-0 pd-5 tk-anisette-petite">
                     <p>
-                        Here are the current status of teams participating in Knockathon, we don't see your name
-                        yet? Isn't that sad.
+                        Here are the current status of teams participating in Knockathon, you don't see your name
+                        yet? <i>Isn't that sad</i>.
                     </p>
 
                     <p>
-                        <a href="#register-now">Register now</a>, you may not have slots in teams as they are limited.
+                        <a href="#register-now">Register now</a>, you may not have slots in the teams as they are
+                        limited to 3-4 per team.
                     </p>
                 </div>
             </div>
@@ -31,51 +32,65 @@
                 <div class="col-md-4 mt-15 tk-anisette-petite" ng-repeat="team in teams | unique: 'name'">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <h3 class="panel-title"><strong>{{ team.name }}</strong></h3>
+                            <div class="media">
+                                <div class="media-left media-middle">
+                                    <div ng-if="team.profile_image !== null">
+                                        <img class="media-object" width="24" height="24"
+                                             src="https://static.tryexzeo.com/org/i/op/0/10286/{{ team.profile_image }}">
+                                    </div>
+                                    <div ng-if="team.profile_image === null">
+                                        <img class="media-object" width="24" height="24"
+                                             ng-src="https://s3.amazonaws.com/assets.tryexzeo.com/images/default_org.png">
+                                    </div>
+                                </div>
+                                <div class="media-body">
+                                    <h3 class="panel-title"><strong>{{ team.name | lowercase}}</strong></h3>
+                                </div>
+                            </div>
                         </div>
                         <div class="panel-body">
 
                             <ul class="media-list">
                                 <li class="media" ng-repeat="user in team.users | unique: 'name'">
                                     <div class="media-left">
-                                        <a href="#">
-                                            <div ng-if="user.profile_image === null">
-                                                <img class="media-object"
-                                                     src="https://s3.amazonaws.com/assets.tryexzeo.com/images/default_user.png"
-                                                     alt="...">
-                                            </div>
-                                            <div ng-if="user.profile_image !== null">
-                                                <img class="media-object"
-                                                     ng-src="https://static.tryexzeo.com/usr/i/up/145092/29/{{user.profile_image}}"
-                                                     alt="...">
-                                            </div>
-                                        </a>
+                                        <div ng-if="user.profile_image === null">
+                                            <img class="media-object" width="38" height="38"
+                                                 src="https://s3.amazonaws.com/assets.tryexzeo.com/images/default_user.png">
+                                        </div>
+                                        <div ng-if="user.profile_image !== null">
+                                            <img class="media-object" width="32" height="32"
+                                                 ng-src="https://static.tryexzeo.com/usr/i/up/145092/29/{{user.profile_image}}">
+                                        </div>
                                     </div>
                                     <div class="media-body">
-                                        <h5 class="media-heading"><strong>{{ user.name }}</strong></h5>
-
                                         <div ng-switch on="user.Status">
                                             <div ng-switch-when="RequestWithdrawn">
+                                                <h5 class="media-heading"><strong>{{ user.name }}</strong></h5>
                                                 <small class="bg-danger all-pd-2 text-shadow">Interested, but rejected
                                                 </small>
                                             </div>
                                             <div ng-switch-when="Rejected">
+                                                <h5 class="media-heading "><strong>{{ user.name }}</strong></h5>
                                                 <small class="bg-danger all-pd-2 text-shadow">Interested, but rejected
                                                 </small>
                                             </div>
                                             <div ng-switch-when="confirm">
+                                                <h5 class="media-heading green"><strong>{{ user.name }}</strong></h5>
                                                 <small class="bg-success all-pd-2 text-shadow">Invited, and joined
                                                 </small>
                                             </div>
                                             <div ng-switch-when="Complete">
+                                                <h5 class="media-heading green"><strong>{{ user.name }}</strong></h5>
                                                 <small class="bg-success all-pd-2 text-shadow">Invited, and joined
                                                 </small>
                                             </div>
                                             <div ng-switch-when="Accepted">
+                                                <h5 class="media-heading green"><strong>{{ user.name }}</strong></h5>
                                                 <small class="bg-success all-pd-2 text-shadow">Invited, and joined
                                                 </small>
                                             </div>
                                             <div ng-switch-default>
+                                                <h5 class="media-heading blue"><strong>{{ user.name }}</strong></h5>
                                                 <small class="bg-info all-pd-2 text-shadow">Invited</small>
                                             </div>
                                         </div>

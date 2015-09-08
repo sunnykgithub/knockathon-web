@@ -112,6 +112,14 @@ body {
     background-color: #067C8C;
 }
 
+.green {
+    color: #5D804E;
+}
+
+.blue {
+    color: #315F75;
+}
+
 .f18 {
     font-size: 18px;
 }
@@ -153,6 +161,7 @@ body {
 }
 
 .all-pd-2 {
-    margin-top: 4px!important;
+    margin-top: 2px!important;
     padding:4px;
+    padding-top:1px;!important;
 }
