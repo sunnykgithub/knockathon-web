@@ -33,7 +33,24 @@
                                 </div>
                                 <div class="media-body">
                                     <h5 class="media-heading">{{ user.name }}</h5>
-                                    <small class="bg-info all-pd-2 text-shadow">{{ user.Status }}</small>
+                                        <div ng-switch on="user.Status">       
+                                            <div ng-switch-when="RequestWithdrawn">
+                                                <small class="bg-info all-pd-2 text-shadow">Interested, but rejected</small>
+                                            </div>
+                                             <div ng-switch-when="Rejected">
+                                                <small class="bg-info all-pd-2 text-shadow">Interested, but rejected</small>
+                                            </div>
+                                             <div ng-switch-when="confirm">
+                                                <small class="bg-info all-pd-2 text-shadow">Invited, and joined</small>
+                                            </div>
+                                             <div ng-switch-when="Accepted">
+                                                <small class="bg-info all-pd-2 text-shadow">Invited, and joined</small>
+                                            </div>
+                                            <div ng-switch-default>
+                                                <small class="bg-info all-pd-2 text-shadow">Invited</small>
+                                            </div>
+                                        </div>
+                                    
                                 </div>
                             </li>
                         </ul>
