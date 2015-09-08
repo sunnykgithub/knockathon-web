@@ -49,7 +49,7 @@
 <script>
 var app = angular.module('teamApp', []);
 app.controller('teamController', function($scope, $http) {
-  $http.get("http://starshipakshay.com:7867/knockathon/teams")
+  $http.get("https://teams.tryexzeo.com/knockathon/teams")
   .success(function (response) {$scope.teams = response;});
 });
 app.filter('unique', function() {
