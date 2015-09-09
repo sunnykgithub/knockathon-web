@@ -165,3 +165,11 @@ body {
     padding:4px;
     padding-top:1px;!important;
 }
+
+/* SVG Logo */
+
+.main_logo {
+    width: 100%;
+    height: 700px;
+}
+
