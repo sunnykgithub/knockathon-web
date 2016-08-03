@@ -101,24 +101,26 @@
 
         var start = new Date();
         var target = new Date(2016, 7, 5, 18, 00, 0, 0);
-        var time = start.getTime() + dateDiffInDays(start, target) * 24 * 60 * 60 * 1000;
-
+        var day = dateDiffInDays(start, target);
+        var time = start.getTime() + (day == 0 ? 1 : day) * 24 * 60 * 60 * 1000;
+       
         var underline = function (val) {
-            return '<span class="themeu">' + val + '</span>'
+            return '<span class="themeu">' + val + '</span>';
         };
+        
 
         $('.clock').countdown({
-            timestamp: time,
+            timestamp: target.getTime(),
             callback: function (days, hours, minutes, seconds) {
-                var message = "";
 
+                var message = "";
                 message += underline(days) + " day" + ( days == 1 ? '' : 's' ) + ", ";
                 message += underline(hours) + " hour" + ( hours == 1 ? '' : 's' ) + ", ";
                 message += underline(minutes) + " minute" + ( minutes == 1 ? '' : 's' ) + " and ";
                 message += underline(seconds) + " second" + ( seconds == 1 ? '' : 's' );
 
                 message += " left!";
-
+                
                 timerMessage.html(message);
             }
         });
