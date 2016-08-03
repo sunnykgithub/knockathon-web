@@ -1,5 +1,5 @@
 .jumbotron {
-    background-color: #F2DE9C;
+    background-color: #fff;
     margin-bottom: 0 !important;
     padding: 81px;
 }
@@ -39,6 +39,14 @@
     color: #603913 !important;
 }
 
+.main_heading {
+    color: #e74c3c !important;
+}
+
+.sub_heading {
+    color: #000 !important;
+}
+
 .bg-green {
     background-color: #bedbe1;
 }
@@ -67,7 +75,7 @@ body {
 
 .navbar-inverse {
     /*background-color: #603913 !important;*/
-    background-color: #04343e;
+    background-color: #000;
 }
 
 .huge {
@@ -97,7 +105,7 @@ body {
 }
 
 .border-gray {
-    background-color: #B9BFBE;
+    background-color: #ececec;
 }
 
 .border-yellow {
@@ -166,10 +174,117 @@ body {
     padding-top:1px;!important;
 }
 
+.navbar-inverse .navbar-nav>li>a {
+    color: #fff;
+}
+
+.dropdown-menu>li>a {
+    padding: 10px 20px;
+}
+
+.main_heading_ctr {
+    padding-top: 20px;
+    padding-bottom: 20px;
+} 
+
 /* SVG Logo */
 
 .main_logo {
     width: 100%;
     height: 700px;
 }
+
+.border_brown {
+    background-color: #c9a68f; 
+}
+
+.bg_brown {
+    background-color: #fae4d5; 
+}
+
+.what-is-it {
+    background-color: #053947;
+    color: #fff;
+    font-size: 18px;
+}
+
+.what-is-it-border {
+    background-color: #053947;
+}
+
+.what-is-it a,
+.teams a {
+    color: #fff;
+    border-bottom: 1px dotted #fff;
+}
+
+.what-is-it a:hover,
+.what-is-it a:visited,
+.teams a:hover,
+.teams a:visited {
+    text-decoration: none;
+}
+
+.text-info {
+    color: #e6e6e6;
+    font-size: 24px;
+    margin-bottom: 30px;
+    padding: 10px 15px;
+}
+
+.rules {
+    background-color: #fff;
+    font-size: 18px;
+}
+
+.rules_border {
+    background-color: #fff;
+}
+
+.theme {
+    background-color: #1abc9c;
+    font-size: 18px;
+    color: #fff;
+}
+
+.theme_border {
+    background-color: #1abc9c;
+}
+
+.register {
+    background-color: #fff;
+    font-size: 18px;
+}
+
+.register_border {
+    background-color: #fff;
+}
+
+.discuss_border {
+    background-color: #ccc;
+    height: 2px;
+}
+
+.teams {
+    background-color: #e74c3c;
+    font-size: 18px;
+    color: #fff;
+}
+
+.teams_border {
+    background-color: #e74c3c;
+}
+
+#time-div {
+    margin-top: 90px;
+}
+
+#timer-message {
+    color: #333;
+    margin-top: 10px;
+}
+
+
+
+
 
